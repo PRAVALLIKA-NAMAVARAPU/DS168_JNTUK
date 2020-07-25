@@ -1,7 +1,7 @@
 {% load static %}
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<a  href="#">
-	<img src="{% static 'images/toll.jpeg' %}" class="rounded-circle" style="height: 40px">
+		<a  href="{% url 'home' %}">
+	<img src="{% static 'images/logo.jpeg' %}" class="rounded-circle" style="height: 40px">
 	</a>
 
   <!-- Links -->
@@ -10,7 +10,7 @@
        <a class="nav-link" href="#">Register</a>
     </li> -->
     <li class="nav-item">
-      <a class="nav-link" href="#">Login</a>
+      <a class="nav-link" href="{% url 'home' %}">Login</a>
 
     </li>
 

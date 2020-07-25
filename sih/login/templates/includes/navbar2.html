@@ -1,7 +1,7 @@
 {% load static %}
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<a  href="#">
-	<img src="{% static 'images/toll.jpeg' %}" class="rounded-circle" style="height: 40px">
+	<img src="{% static 'images/logo.jpeg' %}" class="rounded-circle" style="height: 40px">
 	</a>
 
   <!-- Links -->
@@ -13,13 +13,13 @@
        <a class="nav-link" href="#">Certificates</a>
     </li>
 		<li class="nav-item">
-       <a class="nav-link" href="#">Show Profile</a>
+       <a class="nav-link" href="{% url 'profile' %}">Show Profile</a>
     </li>
 		<li class="nav-item">
        <a class="nav-link" href="#">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Logout</a>
+      <a class="nav-link" href="{% url 'home' %}">Logout</a>
 
     </li>
 

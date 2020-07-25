@@ -8,7 +8,7 @@ class student(models.Model):
     studentName=models.CharField(max_length=100)
     studentGender=models.CharField(max_length=20,choices=gender)
     studentEmail=models.EmailField(max_length=100)
-    date_birth=models.DateField(auto_now=True,null=True)
+    date_birth=models.DateField(null=True)
     studentClass=models.CharField(max_length=20,choices=classType)
     password=models.CharField(max_length=32)
     Due=models.IntegerField(null=False)
